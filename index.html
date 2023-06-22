@@ -1,1 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News App</title>
+    <link rel="stylesheet" href="./style.css">
+  
+</head>
+<body>
+    <header>
+        <h1>News App</h1>
+        <div>
+            <form class="form-inline">
+                <input type="text" class="form-control" name="news" placeholder="Search by name" oninput="searchNews(this)">
+                <select name="categories" class="form-control" onchange="sortNews(this)">;
+                    <option>--Select Category--</option>
+                    <option value="business">Business</option>
+                    <option value="world">World</option>
+                    <option value="politics">Politics</option>
+                    <option value="hatke">Hatke</option>
+                    <option value="science">Science</option>
+                    <option value="sports">Sports</option>
+                </select>
+            </form>                                       
+        </div>
+    </header>
+    <div class="container">
+      <ul class="tabs">
+        <li> <a href="" class="tab-link">All News</a></li>
+        <li> <a href="" class="tab-link">Saved News</a> </li>
+      </ul>
+    </div>
+    
+        <section>
+            <div class="card-grid" id="card-grid">
+            </div>
+        </section>
+        <footer>
+            &copy; 2023 News App
+        </footer>
+        <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<script src="./script.js"></script>
+</body>
+</html>
